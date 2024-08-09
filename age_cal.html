@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Advanced Age Calculator</title>
+</head>
+<body onload="initialize()">
+    <div class="container">
+        <h1>Advanced Age Calculator</h1>
+        <p>Calculate your age in detail and see how long until your next major milestone!</p>
+        
+        <div class="theme-switcher">
+            <label for="theme">Choose Theme:</label>
+            <select id="theme" onchange="switchTheme(this.value)">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        
+        <div class="date-input">
+            <label for="birthdate">Enter Your Birthdate:</label>
+            <input type="date" id="birthdate" onchange="calculateAge()">
+        </div>
+        
+        <div id="result-box">
+            <div id="result">
+                <label for="age">Your Age:</label>
+                <input type="text" id="age" readonly>
+
+                <label for="ageInDays">Your Age in Days:</label>
+                <input type="text" id="ageInDays" readonly>
+
+                <label for="ageInHours">Your Age in Hours:</label>
+                <input type="text" id="ageInHours" readonly>
+
+                <label for="ageInMinutes">Your Age in Minutes:</label>
+                <input type="text" id="ageInMinutes" readonly>
+
+                <label for="ageInSeconds">Your Age in Seconds:</label>
+                <input type="text" id="ageInSeconds" readonly>
+
+                <label for="nextBirthday">Days Until Next Birthday:</label>
+                <input type="text" id="nextBirthday" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
